@@ -1,0 +1,1 @@
+Settlerclonk is checking the green start permanently. When he finds a new object there, he automatically resumes the transport.

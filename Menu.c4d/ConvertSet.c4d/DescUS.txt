@@ -1,0 +1,1 @@
+The start and target of the blue route are used for starts of the green route. Choose this to restore the blue route.

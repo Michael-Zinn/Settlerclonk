@@ -1,0 +1,1 @@
+Dieser Siedlerclonk befindet sich gerade im Wachmodus. Siedlerclonks, die sich im Überwachungsmodus befinden nehmen den Transport automatisch wieder auf, sobald wieder Objekte am Transportstart sind.

@@ -1,0 +1,16 @@
+Hier sind ein paar Hinweise, wie man die Features des Siedlerclonks effektiv nutzen kann.
+
+- einfach das Objekt, welches man hergestellt haben will (z.B.: Teraflint) in Auftrag geben. Man muss nicht erst mühsam normale Flints und Super-Flints herstellen.
+
+- die Transportrouten haben unterschiedliche Prioritäten. Die grüne Route hat eine höhere Priorität als die blaue, im Wachmodus unterbricht der Siedlerclonk die blaue Route, sobald sich beim Start der grünen Route ein Objekt befindet. Nachdem der grüne Transport abgeschlossen ist widmet sich der Siedler wieder der blauen Route, falls er vorher damit beschäftigt war (auch wenn die blaue Route nicht als zu überwachend definiert ist).
+Hat die grüne Route drei Startpunkte, so hat der erste die höchste Priorität, der zweite die zweithöchste und der dritte die niedrigste.
+
+- sinnvoll ist es, eine Transportroute von der Lore in der Goldmine zur Heimatbasis einzurichten, wobei nur Gold transportiert wird und gleichzeitig eine Route von der Chemiefabrik zur Lore in der Mine, wobei nur Teraflints transportiert werden. So wird die Mine mit Flints versorgt, das Gold (und nur das Gold) wird abtransportiert und in der Chemiefabrik werden keine Materialien geklaut, sondern nur die fertigen Flints transportiert.
+Ganz schlaue Spieler können auch die Priorität so setzen, dass erst das Gold abtransportiert wird, wenn keine Flints mehr in der Chemiefabrik sind. ;)
+
+
+- Wenn man z.B.: drei Sägewerke hat, so kann man die blaue Transportroute konvertieren, so dass man zwei zusätzliche Starts für die grüne Route hat. Jetzt kann man jede der drei Loren, die vor den Sägewerken stehen als Starts definieren und die Heimatbasis als Ziel. Man kann noch einstellen, dass der Siedlerclonk die Objekte automatisch verkauft, wodurch man automatisch Geld verdient. Zusätzlich kann man noch in den Überwachungsmodus wechseln, damit der Siedler den Transport automatisch wieder aufnimmt, sobald neue Materialien in den Loren liegen.
+
+(Wenn das Betterpack aktiviert ist muss man sich nicht mal mehr darum kümmern, dass andere Clonks Bäume fällen, ist das Betterpack aktiviert werden endlos viele Bäume gefällt.)
+
+- Wenn man umfangreiche Einstellungen vorgenommen hat so kann man selbige im Kommunikationsmenü an einen anderen eigenen Siedlerclonk übermitteln. Das kann sinnvoll sein wenn am Start viele Objekte rumliegen, die schnell abtransportiert werden sollen. Mehrere Siedler können parallel arbeiten, sie kommen sich nicht in die Quere.

@@ -1,0 +1,1 @@
+Der Siedlerclonk überprüft zur Zeit, ob sich am Transportstart der blauen Route Objekte befinden. Findet er welche, so nimmt er den Transport automatisch wieder auf.

@@ -1,0 +1,21 @@
+Dank geht an:
+
+
+Daniel Werner
+  für seine vielen sehr guten Vorschläge und gefundenen Fehler
+
+
+matthes
+  für Fertig.wav und #include DOOR. Und natürlich dafür, dass er Clonk gemacht hat
+
+
+ripa
+  weil er mir ein Wort übersetzt hat, das ich nicht im Wörterbuch gefunden habe
+
+
+Sven2
+  dafür, dass die Scriptfehler beim Start der Runde geloggt werden
+
+
+Manu
+  er hat einen kleinen Fehler gefunden

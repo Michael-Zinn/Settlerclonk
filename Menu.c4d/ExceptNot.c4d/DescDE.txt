@@ -1,0 +1,1 @@
+Falls der Siedlerclonk den Objekttyp in Klammern ignorieren soll muss man einfach nur diesen Menüeintrag wählen.

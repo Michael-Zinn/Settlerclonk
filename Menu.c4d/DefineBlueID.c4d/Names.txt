@@ -1,0 +1,2 @@
+DE:Objekttyp festlegen
+US:Set object typ

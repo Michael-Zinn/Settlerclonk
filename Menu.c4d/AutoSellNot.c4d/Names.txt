@@ -1,0 +1,2 @@
+DE:nicht automatisch verkaufen
+US:don't autosell

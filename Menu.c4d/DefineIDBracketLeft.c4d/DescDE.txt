@@ -1,0 +1,1 @@
+In diesen Klammern wird der Objekttyp gezeigt, der vom Siedlerclonk transportiert wird.

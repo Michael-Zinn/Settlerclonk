@@ -1,0 +1,1 @@
+In diesem Menü kann man festlegen, ob der Siedlerclonk nur Objekte eines bestimmten Typs transportieren soll (z.B.: Gold). Der Siedler ignoriert dann alle anderen Objekte (z.B.: Flints, die in der Mine und nicht in der Heimatbasis benötigt werden).

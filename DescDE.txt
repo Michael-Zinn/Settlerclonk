@@ -1,0 +1,20 @@
+Kann eigenständig verschiedene Aufgaben ausführen (Auftragsmenü über Taste Spezial 2) und unterstützt so den Bau von Siedlungen.
+
+Seine Stärke liegt im Transport von Objekten, Transportstart und -ziel lassen sich im Kontextmenü festlegen. Des Weiteren kann er Gebäude eigenständig ans Stromnetz anschließen.
+
+Außerdem ist er auf die Herstellung von Objekten spezialisiert; benötigt er Materialien, die er nirgens auftreiben kann, so stellt er sie selbst her.
+
+Fortgeschrittene Spieler können im Profimodus zusätzliche Einstellungen vornehmen, wie z.B.: den zu transportierenden Objekttyp festlegen, eine zweite Transportroute einrichten oder den Wachmodus aktivieren.
+
+Tipps zur Benutzung des Profimodus liegen in Form eines eigenen Objektes bei.
+
+Version 1.9.3b
+
+
+Hinweise:
+
+- Diese Version des Siedlerclonks wurde für den Wettbewerb etwas modifiziert, so dass der Siedler nicht auf das Betterpack angewiesen ist.
+
+- Der Siedlerclonk wurde für die Golden Wipf Edition 2 optimiert, sollte aber auch mit 4.65 funktionieren (ich hatte nicht genügend Zeit ihn mit Version 4.65 zu testen).
+
+- Mit der GWE2 sieht das Kontextmenü sehr chaotisch aus, die Einträge sind falsch geordnet, einige erscheinen sogar doppelt. Das ist jedoch ein Fehler in der GWE2 und nicht im Siedlerclonk.

@@ -1,0 +1,1 @@
+Wird diese Option aktiviert, so verkauft der Siedlerclonk automatisch die zu transportierenden Objekte, falls das Zielobjekt eine eigene Heimatbasis ist.

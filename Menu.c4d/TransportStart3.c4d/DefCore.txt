@@ -1,0 +1,8 @@
+[DefCore]
+id=SX7K
+Name=GreenTransportStart3
+Category=1
+Width=1
+Height=1
+Picture=0,0,16,16
+ 

@@ -1,0 +1,1 @@
+Dieses Symbol auswählen, damit der Siedlerclonk den Transportstart der grünen Route regelmäßig überprüft.

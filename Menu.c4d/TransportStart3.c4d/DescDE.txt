@@ -1,0 +1,1 @@
+Laufend Objekte von hier einsammeln und an der Zielposition ablegen.

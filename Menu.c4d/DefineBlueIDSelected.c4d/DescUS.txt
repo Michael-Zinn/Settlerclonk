@@ -1,0 +1,1 @@
+In this menu you can define the object typ of the transport route. If a special typ (for example: gold) is set, Settlerclonk ignores the other objects (for example: flints, who are needed in the mine, not in the base).

@@ -1,0 +1,90 @@
+DIESE DATEI IST UNVOLLSTÄNDIG UND ENTHÄLT NUR DAS WICHTIGSTE!
+
+
+[Transport:]
+
+Der Siedlerclonk nimmt sich immer das letzte im Objekt vom Start. Das hat zwei Vorteile:
+
+- Wenn man im Aktivieren/Kaufen/Holen-Menü etwas auswählen will verrutschen nicht die Objekte nicht mehr und man klickt nichts an, was man nicht will (außer natürlich man wollte das letzte Objekt auswählen)
+
+- Wenn die Objekte im Freien abgelegt werden erscheinen die neuen Objekte vor denen, die schon rumliegen
+
+
+Wird das Objekt, dass sich der Siedlerclonk nehmen wollte geklaut so nimmt er sich einfach ein anderes. Sind keine mehr da, so bleibt er stehen.
+
+Der Siedler transportiert nur Objekte, die erreichbar, fertig gebaut sind und nicht feststecken.
+
+Der Siedler transportiert nicht, wenn Start und Ziel identisch sind, bzw. zu nah bei einander liegen.
+
+Sollte der Start oder das Ziel verschwinden merkt das der Siedler und gibt eine Meldung aus.
+
+Die Transportrouten haben unterschiedliche Prioritäten. Die grüne Route hat eine höhere Priorität als die blaue, im Wachmodus unterbricht der Siedlerclonk die blaue Route, sobald sich beim Start der grünen Route ein Objekt befindet. Nachdem der grüne Transport abgeschlossen ist widmet sich der Siedler wieder der blauen Route, falls er vorher damit beschäftigt war (auch wenn die blaue Route nicht als zu überwachend definiert ist).
+Hat die grüne Route drei Startpunkte, so hat der erste die höchste Priorität, der zweite die zweithöchste und der dritte die niedrigste.
+
+
+
+##########################
+
+
+[Automatische Baumaterialeinherstellung:]
+
+Leider funktioniert es logischer Weise nur bei Baumaterialien. :(
+Es ist unmöglich herauszufinden, welcher Objekttyp nicht aufzutreiben war, wenn der Command "Acquire" fehlschlägt. Im Siedlerclonk ist das Problem so gelöst:
+Der Command "Build" schlägt in der Regel fehl, wenn die Baumaterialien nicht aufzutreiben sind. Der Siedlerclonk ermittelt dann die erste fehlende Komponente des zu bauenden Objektes und stellt sie dann her.
+
+Funktionsweise:
+Funktioniert nach dem Prinzip der TransferZones; Der Siedlerclonk fragt die Objekte in seiner Umgebung (-500,-250,+1000,+500), ob sie die benötigte Komponente herstellen können (ObjectCall(pObj,"IsProducerOf",C4ID);). Der Siedlerclonk sucht sich von allen Objekten, die TRUE zurückgegeben haben das nächstdgelegene aus und fragt per ObjectCall "HowToProduce",C4ID ab. Das Herstellungsobjekt gibt dem Siedler dann die entsprechenden Commands. Der Siedlerclonk hängt an diese Commands ein "Acquire",C4ID und daran ein "Build",pOBJ  ("Build" ist ja fehlgeschlagen und muss neu gesetzt werden).
+
+Da das ziemlich abstrakt ist ist hier erklärt, wie das Script des Sägewerks aus dem Betterpack funktioniert:
+
+1. Es wird überprüft, ob die erfragte ID WOOD ist. Wenn nicht gibt IsProducerOf FALSE zurück.
+2. Wenn das Sägewerk nicht fertig gebaut ist wird auch FALSE zurückgegeben.
+3. Falls das Sägewerk nicht mit Strom versorgt, die Regel "Gebäude brauchen Energie" aktiviert ist und sich in der Umgebung des fragenden Siedlerclonks ein mit Strom versorgtes Sägewerk befindet wird auch wieder FALSE zurückgegeben.
+4. Es wird TRUE zurückgegeben.
+
+Falls dieses Sägewerk der nächstgelegene Herstellungsort ist wird jetzt HowToProduce aufgerufen:
+
+1. Es kommen ähnliche Checks wie in der anderen function
+2. Sollte das Sägewerk nicht mit Strom versorgt sein erhält der Siedlerclonk den Befehl das Sägewerk mit Strom zu versorgen und danach noch einmal HowToProduce aufzurufen.
+3. Der Siedler erhält nun den Befehl so lange zu warten, wie die Herstellung von Holz normaler Weise braucht.
+4. Da drüber wird der Befehl gesetzt, den normalen Produktions-Algorithmus aufzurufen, den man auch im Kontextmenü aufrufen kann.
+
+
+Bei den Werkstätten ist das etwas anders. Damit man nicht für jede Werkstatt das Originalscript überladen muss ist es sehr variabel aufgebaut. Das steht im Script der Werkstatt:
+
+/* Erforderliche Produkteigenschaften (überladbar) */
+ProductTyp:return(C4D_Vehicle());
+ProductCondition:return();
+ProductCall:return();
+
+/* Produktionseigenschaften */
+IsProducerOf: // Frager, Objekt-ID
+  if(ProductCondition())
+    if(Not(DefinitionCall( Par(1),ProductCall() )))
+      return();
+
+  [hier kommt der Standardkram, ist fertig gebaut, hat Energie, Spieler hat den Bauplan usw.]
+
+
+Wichtig sind hier die ersten drei Scriptzeilen:
+
+- ProductTyp gibt den Objekttyp an, der hergestellt werden kann. In der Werkstatt können also nur Fahrzeuge hergestellt werden.
+
+- ProductCondition gibt an, ob das Objekt eine bestimmte Anforderung erfüllen muss. ProductCondition ist entweder 0 oder 1.
+
+- ProductCall ist ein DefinitionCall, der im herzustellenden Objekttyp getätigt wird und TRUE zurückgeben muss, damit IsProducerOf() TRUE zurückgeben darf.
+
+(Die letzten beiden Punkte haben in der Werkstatt keine Funktion)
+
+
+Und das hier sind die Herstellungsdaten der Chemiefabrik:
+
+/* Erforderliche Produkteigenschaften (überladen) */
+ProductTyp:return(C4D_Object());
+ProductCondition:return(1);
+ProductCall:return("IsChemicalProduct");
+
+In der Chemiefabrik kann man also nur kleine Objekte herstellen, die ein "IsChemicalProduct" im Script stehen haben.
+
+
+

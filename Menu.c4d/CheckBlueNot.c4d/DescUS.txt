@@ -1,0 +1,1 @@
+Choose this symbol and Settlerclonk will check the blue start for new objects permanently.

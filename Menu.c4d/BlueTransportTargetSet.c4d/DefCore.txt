@@ -1,0 +1,8 @@
+[DefCore]
+id=SK7K
+Name=BlueTransportTargetSet
+Category=1
+Width=1
+Height=1
+Picture=0,0,35,35
+ 

@@ -1,0 +1,4 @@
+Speziell für den Wettbewerb emuliert dieses Hilfsobjekt das Betterpack, der Siedlerclonk ist jetzt nicht mehr auf selbiges angewiesen. Das Betterpack kann jedoch weiterhin verwendet werden, es kommt diesem Objekt nicht in die Quere.
+
+Hinweis für Entwickler:
+Das hier enthaltene Script ist sehr kompliziert, da es nur eine Notlösung darstellt. Für bessere Beispiele bitte in's Betterpack schauen.

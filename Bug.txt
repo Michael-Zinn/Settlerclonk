@@ -1,0 +1,3 @@
+Der einzige mir bekannte Fehler:
+
+Man kann alles was man anfassen kann als Start oder Ziel einer Transportroute angeben. Das ließe sich wohl nur mit meinem lieblings-fiktiven Befehl >GetDefCore(ID,"GrabPutGet")< lösen. Vielleicht in GWE3...

@@ -1,0 +1,2 @@
+DE:Fortsetzen nicht möglich
+US:Resume inpossible

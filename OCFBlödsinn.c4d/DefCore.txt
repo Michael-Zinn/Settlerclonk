@@ -1,0 +1,8 @@
+[DefCore]
+id=S_7K
+Name=SillyOCFHelper
+Category=1
+Width=1
+Height=1
+Picture=0,0,1,1
+ 

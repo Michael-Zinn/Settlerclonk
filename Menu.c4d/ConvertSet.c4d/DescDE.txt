@@ -1,0 +1,1 @@
+Im Moment werden Start und Ziel der blauen Transportroute als Startpunkte der grünen benutzt. Das hier anklicken, um die blaue Route wieder herzustellen.

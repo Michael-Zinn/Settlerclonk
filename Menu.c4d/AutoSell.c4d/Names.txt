@@ -1,0 +1,2 @@
+DE:automatisch verkaufen
+US:auto sell

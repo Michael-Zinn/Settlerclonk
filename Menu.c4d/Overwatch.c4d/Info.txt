@@ -1,0 +1,1 @@
+Dieses Objekt hat nichts mit der KI zu tun, es zeigt lediglich an, dass sich der Siedlerclonk im Wachmodus befindet. Das Script sorgt dafür, dass das Symbol auch über dem Clonk erscheint, wenn dieser sich in einem Objekt befindet (also nicht über dem ersten Vertex des Containers).

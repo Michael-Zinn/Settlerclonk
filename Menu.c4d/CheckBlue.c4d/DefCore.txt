@@ -1,0 +1,8 @@
+[DefCore]
+id=SD7K
+Name=MenuItemCheckBlue
+Category=1
+Width=1
+Height=1
+Picture=0,0,35,35
+ 

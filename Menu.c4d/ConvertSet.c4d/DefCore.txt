@@ -1,0 +1,8 @@
+[DefCore]
+id=SO7K
+Name=ConvertSet
+Category=1
+Width=1
+Height=1
+Picture=0,0,35,35
+ 

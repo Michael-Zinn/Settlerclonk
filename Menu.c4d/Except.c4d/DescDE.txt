@@ -1,0 +1,1 @@
+Zur Zeit wird alles transportiert, auﬂer Objekte, die vom gleichen Typ sind wie das Objekt, welches in den beiden roten Klammern gezeigt ist.

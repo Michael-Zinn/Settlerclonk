@@ -1,0 +1,8 @@
+Dieses idiotische Hilfsobjekt gibt es nur, weil man bei GetOCF() keine ID angeben kann. Dieses Objekt erstellt jeden Objekttyp, überprüft, ob es tragbar ist, setzt es in's "Objekttyp festlegen"-Menü und löscht den Objekttyp wieder. Würde der Siedlerclonk diese Objekte erstellen, so würde man wahnsinnig viele Siedlungspunkte kriegen, da unverständlicher Weise von Objekten erstellte Objekte immer den gleichen Besitzer haben, wie das Objekt, das sie erstellt. Die Punkte würden zwar nach ein paar Sekunden wieder verschwinden, jedoch könnte in dieser Zeit das Spielziel "Siedlungspunkte" diese Punkte entdecken und so die Runde beenden.
+
+Falls in GWE3 der Befehl so aussieht:
+GetOCF(pOBJ,C4ID);
+Wird es dieses Objekt dann nicht mehr geben.
+
+Noch besser wäre natürlich ein
+GetDefCore(C4ID,"Eintragsname",int Nummer);    :)

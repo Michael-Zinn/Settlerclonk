@@ -1,0 +1,1 @@
+Derzeit transportiert der Siedlerclonk alle tragbaren Objekte.

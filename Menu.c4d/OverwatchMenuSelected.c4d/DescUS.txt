@@ -1,0 +1,1 @@
+In this menu you can define the transport starts which the settler have to check for new objects permanently. Settlerclonks who are in Overwatch mode are marked with an animated eye.

@@ -1,0 +1,1 @@
+Der Transport kann nicht fortgesetzt werden, weil Start und Ziel identisch sind.

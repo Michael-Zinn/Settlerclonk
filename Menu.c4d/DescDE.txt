@@ -1,0 +1,1 @@
+Dieser Ordner enthält die Menüeinträge. Zusätzlich hat jedes Symbol eine kurze Beschreibung, die den entsprechenden Befehl erklärt.

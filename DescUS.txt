@@ -1,0 +1,10 @@
+Supports the creation and extension of settlements by independently fulfilling construction orders (command menu key Special 2).
+
+His greatest advantige is that he can transport objects automaticly. The transport start and target can be set in the context menu. He can also supports buildings with energy.
+
+He is a specialist if it comes to construct a building. When the components for the buildings are missing he will produce them.
+
+Version 1.9.3b
+
+INFORMATION:
+I'm sorry, but there wasn't enough time to translate Settlerclonks very long script. Version 2.0 will have an english script.

@@ -1,0 +1,11 @@
+[DefCore]
+id=SZ7K
+Name=Overwatch
+Category=8
+TimerCall=Check
+Timer=1
+Width=16
+Height=16
+Offset=-8,-8
+Vertices=1
+VertexY=11

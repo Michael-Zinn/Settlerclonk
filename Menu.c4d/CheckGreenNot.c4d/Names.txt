@@ -1,0 +1,2 @@
+DE:Grünen Start nicht überprüfen
+US:Don't check the blue start

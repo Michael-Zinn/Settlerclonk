@@ -1,0 +1,1 @@
+Der abgebrochene Transport wird fortgesetzt, Start und Ziel werden beibehalten.

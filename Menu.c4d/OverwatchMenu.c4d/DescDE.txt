@@ -1,0 +1,1 @@
+In diesem Menü wird festgelegt, bei welchen Transportstartpunkten der Siedlerclonk von Zeit zu Zeit nachschauen soll, ob sich dort wieder neue Objekte befinden. Über Siedlerclonks, die im Wachmodus sind, erscheint ein animiertes Auge.

@@ -1,0 +1,2 @@
+DE:Idiotisches GetOCF-Hilfsobjekt
+US:Silly GetOCF-helper

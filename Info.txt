@@ -1,0 +1,122 @@
+Siedlerclonk
+Version 1.9.3b
+von Michael Zinn (Horus)
+
+Die Grafik ist von Matthes Bender, das Script ist komplett von mir, da das alte nicht mehr mit den neueren Engine-Versionen kompatibel war. Diese Version des Siedlerclonks basiert NICHT auf dem Original von RWD.
+
+Erstellt am: 23.2.01
+Veröffentlicht am: 23.2.01 (www.ccan.de)
+
+Bugs fixed: 25.2.01
+Nochmal veröffentlicht am: 25.2.01 (www.ccan.de)
+
+Noch mehr Bugs gefixed: 1.3.01
+Nochmal veröffentlicht am: 1.3.01 (www.ccan.de)
+
+Automatische Component-Herstellung: 2.3.01
+Nochmal veröffentlicht am: 2.3.01 (www.ccan.de)
+
+Bugs fixed: 8.3.01
+Nochmal veröffentlicht am: 8.3.01 (www.ccan.de)
+
+Fertige Version (1.0): 3.5.01 (www.ccan.de)
+Perfekte Component-Herstellung, die zu allen Objekten kompatibel sein kann. (Ähnlich wie eine TransferZone).
+Benötigt ab jetzt 7K_BetterPack.c4d.
+
+Spezielle Wettbewerbsversion (1.9.1b): 22.7.01
+Für den Wettberb braucht der Siedlerclonk das Betterpack NICHT. Allerdings ist es dadurch für andere Entwickler viel schwieriger nachzuvollziehen, wie das Baumaterialienherstellungssystem funktioniert. Die offizielle Version wird wieder auf das Betterpack angewiesen sein und wird das gleiche Script haben (der Siedlerclonk an sich wurde für den Wettbewerb nicht verändert, es gibt jetzt nur ein kompliziertes Hilfsobjekt, welches das Betterpack imitiert).
+
+Noch eine Wettbewerbsversion (1.9.2b): 22.7.01
+Die Transportrouten haben jetzt unterschiedliche Prioritäten. Die grüne Route hat eine höhere Priorität als die blaue, im Wachmodus unterbricht der Siedlerclonk die blaue Route, sobald sich beim Start der grünen Route ein Objekt befindet. Nachdem der grüne Transport abgeschlossen ist widmet sich der Siedler wieder der blauen Route, falls er vorher damit beschäftigt war (auch wenn die blaue Route nicht als zu überwachend definiert ist).
+Hat die grüne Route drei Startpunkte, so hat der erste die höchste Priorität, der zweite die zweithöchste und der dritte die niedrigste.
+
+Die definitiv letzte Wettbewerbsversion (1.9.3b): 22.7.01 23:18
+Der Overwatchmode wird deaktiviert, wenn man im Kontextmenü "Bauauftrag" oder "Zurück zur Basis" wählt. (vorher ging er in die Basis und dann gleich wieder raus um weiter zu transportieren :o)
+
+
+
+0 : Transportstart (X-Achse/Objekt)
+1 : Transportstart (Y-Achse/-1(Objekt))
+2 : Transportziel (X-Achse/Objekt)
+3 : Transportziel (Y-Achse/-1)
+4 : ID grün
+5 : Blau start x
+6 : blau start y
+7 : blau ziel x
+8 : blau ziel y
+9 : ID blau
+
+FLOAT : Bitmaske:
+        0(  1)=check green
+        1(  2)=check blue/green2
+        2(  4)=check green3
+        3(  8)=blue converted to green
+        4( 16)=Overwatch
+        5( 32)=Sell green
+        6( 64)=Sell blue
+        7(128)=green id except
+        8(256)=blue id except
+
+
+Symbole:
+Für den Siedlerclonk (SC7K)
+S0 7K	| Resume Transport
+S1 7K	| Transport Start
+S2 7K	| Transport Start Set
+S3 7K	| Transport Target
+S4 7K	| Transport Target Set
+S5 7K	| Advanced Options
+S6 7K	| SELECTED BlueOptions
+S7 7K	| Green ID
+S8 7K	| Check 
+S9 7K	|  Check green not
+SA 7K	|   Check green
+SB 7K	|  Check blue not
+-- --   | - (Der Siedlerclonk hat diese ID)
+SD 7K	|   Check blue
+SE 7K	| Green Bad Resume
+SF 7K	| Blue Bad Resume
+SG 7K	| Blue options
+SH 7K	|  Blue Start Not Set
+SI 7K	|   Blue Start Set
+SJ 7K	|  Blue Target Not Set
+SK 7K	|   Blue Target Set
+SL 7K	|  Blue Resume
+SM 7K	|  Blue ID
+SN 7K	| Conv. Not
+SO 7K	|  Conv. Yes
+SP 7K	| Klammer auf
+SQ 7K	| Klammer zu
+SR 7K	| SELECTED Blue ID
+ST 7K	| ID All 
+SU 7K	| Blue Options impossible
+SV 7K	| Green Start2
+SW 7K	| Green Start2 Set
+SX 7K	| Green Start3
+SY 7K	| Green Start3 Set
+SZ 7K	| Overwatch
+===================
+X1 7K	| SELECTED Check
+X2 7K	| SELECTED Green ID
+X3 7K	| Communication
+X4 7K	| SELECTED Communication
+X5 7K	| Auto sell not
+X6 7K	| Auto sell yes
+X7 7K	| Transport except not
+X8 7K	| Transport except yes
+
+
+Hilfsobjekt:
+S_ 7K	| Idiotisches Hilfsobjekt
+
+
+Benutzte undokumentierte Befehle:
+
+GetMenu(pOBJ);
+  Keine automatischen Transporte während das Menü geöffnet ist.
+
+OCF_Fullcon()
+  Der Siedler versucht nicht sich Objekte in noch nicht fertig gebauten Gebäuden herzustellen (falls das Gebäude für die Herstellung fertig gebaut sein muss).  
+
+OCF_Available()
+  Der Siedler nimmt keine Objekte, die nicht erreichbar sind.
