@@ -20,6 +20,7 @@ rsync -a \
   --exclude=build \
   --exclude=build.sh \
   --exclude=LICENSE \
+  --exclude=makefile \
   ./ build/7K_Settlerclonk.c4d
 
 ## Pack
