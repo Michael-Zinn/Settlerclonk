@@ -20,6 +20,12 @@ CC BY-NC, see LICENSE file for details.
 
 You should now find **7K_Settlerclonk.c4d** in the **build** directory.
 
+## Code
+
+- Programming language: **C4Script (not C!)**
+- Encoding: **CP-1252 CRLF**
+- Interesting files: **ScriptDE.c**, **Helper.c4d/Script.c**
+
 ## What does it do?
 
 *Translation of TIPPS.c4d/DescDE.txt:*
