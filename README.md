@@ -2,7 +2,7 @@
 
 Settlerclonk is an AI assisted player character for the game [Clonk Planet](http://clonk.de/classics.php?lng=en).
 
-(Youtube Video Image Link goes here)
+[![Settlerclonk Video](fakevideoplayer.png)](http://www.youtube.com/watch?v=krwDcSeOZ5E)
 
 ## License
 

@@ -19,6 +19,7 @@ rsync -a \
   --exclude=.gitignore \
   --exclude=build \
   --exclude=build.sh \
+  --exclude=fakevideoplayer.png \
   --exclude=LICENSE \
   --exclude=makefile \
   --exclude=README.md \
