@@ -36,3 +36,7 @@ If the green route has three starting points, the start 1 will have the highest 
 - If you have three lumbermills, it can make sense to convert the blue route into two additional starts for the green route. Now you can set all three minecarts in front of your three lumbermills as starting points and your home base as the destination. If you also set the checkmark for automatic selling you'll make money automatically. You can also enable overwatch mode to automatically resume work when new trees got chopped down
 
 - After setting up an extensive configuration, you can use the communications menu to send all settings to another own Settlerclonk. This can be useful when one Settlerclonk is overwhelmed; sending the current config to a different Settler basically adds another worker to the same job.
+
+## Bonus
+
+Brand new [Minecraft Skin](https://ccan.de/cgi-bin/ccan/ccan-view.pl?a=view&i=6352).
